@@ -3,13 +3,17 @@
 #  Creadted Time: 2021/1/6 19:03
 from flask import render_template
 
-from blogs import app
+from app import app
 
 
 @app.route("/")
 @app.route('/login')
-def hello_world():
-    return render_template("contact.html")
+def login():
+    return render_template("register.html")
+
+# def register():
+
+
 
 
 if __name__ == '__main__':
